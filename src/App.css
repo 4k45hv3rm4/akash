@@ -23,7 +23,7 @@
   text-transform: uppercase;
 }
 
-.Section{
+.Section {
   background-color:#fffc4d;
   min-height: 100vh;
   color: rgb(240, 179, 240)0, 179, 240);
@@ -33,7 +33,6 @@
   width:500px;
   align-self:center;
   justify-content:center;
-
 }
 
 .box>*{
