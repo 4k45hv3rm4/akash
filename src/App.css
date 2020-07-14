@@ -17,6 +17,14 @@
 
 
 }
+#project{
+  display: flex;
+  flex-direction: row;
+
+}
+.projectSection {
+
+}
 .mainText{
   font-size: 60px;
   color: purple;
@@ -26,13 +34,16 @@
 .Section {
   background-color:#fffc4d;
   min-height: 100vh;
-  color: rgb(240, 179, 240)0, 179, 240);
+  color: rgb(240, 179, 240);
   display: flex;
+  padding:40px;
   flex-wrap:wrap;
-  margin: 10px auto;
-  width:500px;
-  align-self:center;
+  flex-direction: row;
+  margin: 30px 10px;
+  opacity: 0.9;
+  /*align-self:center;*/
   justify-content:center;
+  border:2px solid red;
 }
 
 .box>*{
@@ -42,7 +53,7 @@
   margin: 10px auto;
   width:500px;
 }
-.Content{ 
+.Content{
   margin:20px auto;
 
 }
@@ -50,28 +61,23 @@
 .element_card{
   background-color: purple;
   color: #fffc4d;
-  width:600px;
+  width:250px;
   height:250px;
-  padding: 20px 80px;
-  border-radius: 10%;
+  padding: 20px 50px;
+  border-radius: 30%;
   margin:10px 20px;
+  box-shadow: 10px 5px 5px red;
+}
+.Col{
+display: flex;
 }
 .element_card  a {
   text-decoration: none;
   color:#fffc4d;
 }
-.App-logo {
-  height: 30vmin;
-  pointer-events: none;
-  border-radius: 50%;
-  top:30px;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
+
 
 .header{
   display: row;
@@ -84,7 +90,7 @@
   justify-content: start;
   display: flex;
   flex-direction: row-reverse;
-  
+
 }
 
 
@@ -111,15 +117,4 @@ li a:hover{
   background-color: #111;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

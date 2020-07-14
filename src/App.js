@@ -6,6 +6,9 @@ import Project from './components/projects'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {  faFile } from '@fortawesome/free-solid-svg-icons'
 import Contact from './components/contact';
+import {Button } from 'react-bootstrap/Button';
+
+
 
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -61,25 +64,26 @@ window.onload = function() {
 
 function App() {
   return (
-    
+
     <div className="App">
       <header className="header">
         <img src="https://instagram.fbho1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/106030138_2568905516704579_3147270883394418410_n.jpg?_nc_ht=instagram.fbho1-1.fna.fbcdn.net&_nc_ohc=Lg4jYkR6iAcAX-CdR3p&oh=d598583af9bb01aef1fd5d9317b5e91a&oe=5F23AF10" className="App-logo" alt="logo" />
         <p className="mainText">
-          I am  
+          I am
           <span
             class="txt-rotate"
             data-period="2000"
             data-rotate='[ " Akash Verma.", " Bibliophile.", " Web Developer.", " Mobile Developer.", "" ]'>
-              
+
           </span>
         </p>
-        
+
       </header>
       <Header className="header"/>
       <hr />
       <Content />
-      <div id="projects"></div><Project />
+      <div id="projects"><Project />
+      </div>
       <Contact/>
     </div>
   );
